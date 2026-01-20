@@ -60,8 +60,8 @@ export const projects: Project[] = [
       "Audit-friendly outputs suitable for regulated environments.",
     ],
     video: {
-      src: "/rag-demo.mp4",
-      title: "RAG Demo (gig.mp4)",
+      src: "/gig.mp4",
+      title: "RAG Knowledge Assistant (Demo)",
       description:
         "Walkthrough of a retrieval-augmented assistant that cites sources and exposes retrieval diagnostics.",
     },
@@ -106,10 +106,10 @@ export const projects: Project[] = [
       "Audit-ready outputs for compliance workflows.",
     ],
     video: {
-      src: "/document-completeness-demo.mp4",
+      src: "/small-portfolio-demo.mp4",
       title: "LLM-Assisted Standard & Document Completeness Checker (Demo)",
       description:
-        "In this walkthrough, a synthetic document is evaluated for standard detection, section completeness, and explanation with confidence scores and page references. Results can be exported as JSON or CSV.",
+        "In this walkthrough, I run a synthetic document through an evaluation pipeline that (1) detects the most likely standard/format and (2) verifies whether the document includes the expected sections (e.g., objectives, scope, criteria, responsibilities, conclusion). Even when a section is not explicitly labeled, the system can infer and extract intent using an LLM backend, then explains why it passed/failed with confidence scores and page-level references. Results can be exported as JSON or CSV for downstream reporting and audit-ready workflows.",
     },
   },
   {

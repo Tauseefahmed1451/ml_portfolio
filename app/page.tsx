@@ -11,12 +11,37 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(45,212,191,0.25),_transparent_55%)]" />
         <div className="relative grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-              Senior Machine Learning Engineer
-            </p>
-            <h1 className="mt-3 text-3xl font-bold sm:text-4xl">
-              Building production-grade GenAI, LLMOps, and multimodal systems.
+            <h1 className="text-4xl font-bold text-slate-900 sm:text-5xl">
+              Tauseef Ahmed Memon
             </h1>
+            <p className="mt-3 text-lg text-slate-700">
+              Senior Machine Learning Engineer (L4) -- GenAI, LLMOps, Multimodal AI
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-600">
+              <span>Naval Anchorage, Islamabad, Pakistan</span>
+              <a className="underline" href="mailto:tauseefahmed.tam@gmail.com">
+                tauseefahmed.tam@gmail.com
+              </a>
+              <a
+                className="underline"
+                href="https://wa.me/923352121095"
+                target="_blank"
+                rel="noreferrer"
+              >
+                WhatsApp +92 335 2121095
+              </a>
+              <a
+                className="underline"
+                href="https://www.linkedin.com/in/tauseef-ahmed-memon-15abb5364/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <p className="mt-6 text-2xl font-semibold text-slate-900">
+              Building production-grade GenAI, LLMOps, and multimodal systems.
+            </p>
             <p className="mt-4 text-base text-slate-700">
               I design and ship end-to-end ML systems: LLM fine-tuning, diffusion
               pipelines, retrieval-backed verification, and Kubernetes MLOps with
