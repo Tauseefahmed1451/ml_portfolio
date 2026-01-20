@@ -3,7 +3,7 @@ export default function Resume() {
     <main className="mx-auto max-w-5xl px-6 py-12 space-y-6">
       <div>
         <h1 className="text-2xl font-bold">Resume</h1>
-        <p className="mt-2 text-gray-700">
+        <p className="mt-2 text-slate-700">
           View my resume below or download the PDF.
         </p>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">

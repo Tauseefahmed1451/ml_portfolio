@@ -5,10 +5,10 @@ export default function CaseStudy() {
         <h1 className="text-2xl font-bold">
           Custom Stable Diffusion for Game-style Characters (Anonymized)
         </h1>
-        <p className="mt-2 text-gray-700">
+        <p className="mt-2 text-slate-700">
           Role: Technical/Project Lead (team of 3). Built fine-tuning + production workflow.
         </p>
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-sm text-slate-600 mt-2">
           Details anonymized due to NDA. No client identifiers, training data, or proprietary weights.
         </p>
       </header>
@@ -111,7 +111,7 @@ export default function CaseStudy() {
               </g>
             ))}
           </svg>
-          <figcaption className="mt-2 text-sm text-gray-600">
+          <figcaption className="mt-2 text-sm text-slate-600">
             High-level flow only. Training data, prompts, and weights are NDA-redacted.
           </figcaption>
         </figure>

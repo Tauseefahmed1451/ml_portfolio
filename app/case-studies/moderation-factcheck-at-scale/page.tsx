@@ -5,10 +5,10 @@ export default function CaseStudy() {
         <h1 className="text-2xl font-bold">
           Fact-check + Moderation Pipeline at Scale (Anonymized)
         </h1>
-        <p className="mt-2 text-gray-700">
+        <p className="mt-2 text-slate-700">
           Role: Technical/Project Lead (team of 6). Designed system to handle ~5k posts/sec.
         </p>
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-sm text-slate-600 mt-2">
           Details anonymized due to NDA. No client identifiers, code, prompts, or proprietary data.
         </p>
       </header>
@@ -115,7 +115,7 @@ export default function CaseStudy() {
               </g>
             ))}
           </svg>
-          <figcaption className="mt-2 text-sm text-gray-600">
+          <figcaption className="mt-2 text-sm text-slate-600">
             High-level flow only. No client-specific components, prompts, or data shown.
           </figcaption>
         </figure>

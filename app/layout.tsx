@@ -62,16 +62,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b border-gray-200">
-          <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-4 md:flex-row md:items-center md:justify-between">
-            <div className="space-y-1">
+        <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-4 md:flex-row md:items-center md:justify-between">
+            <div className="space-y-2">
               <Link href="/" className="text-lg font-semibold">
                 Tauseef Ahmed Memon
               </Link>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-slate-600">
                 Senior Machine Learning Engineer (L4) -- GenAI, LLMOps, Multimodal AI
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-slate-600">
                 Naval Anchorage, Islamabad, Pakistan |{" "}
                 <a
                   className="underline"
@@ -82,23 +82,31 @@ export default function RootLayout({
                   WhatsApp +92 335 2121095
                 </a>
               </p>
+              <nav className="flex flex-wrap gap-4 text-sm text-slate-600">
+                <Link className="underline" href="/projects">
+                  Projects
+                </Link>
+                <Link className="underline" href="/case-studies">
+                  NDA Case Studies
+                </Link>
+              </nav>
             </div>
             <div className="flex flex-wrap gap-3 text-sm">
               <a
-                className="rounded-md border px-3 py-1"
+                className="rounded-full border border-slate-300 px-4 py-2"
                 href="mailto:tauseefahmed.tam@gmail.com"
               >
                 tauseefahmed.tam@gmail.com
               </a>
               <a
-                className="rounded-md border px-3 py-1"
+                className="rounded-full border border-slate-300 px-4 py-2"
                 href="https://www.linkedin.com/in/tauseef-ahmed-memon-15abb5364/"
                 target="_blank"
                 rel="noreferrer"
               >
                 LinkedIn
               </a>
-              <Link className="rounded-md border px-3 py-1" href="/resume">
+              <Link className="rounded-full bg-slate-900 px-4 py-2 text-white" href="/resume">
                 Resume
               </Link>
             </div>
