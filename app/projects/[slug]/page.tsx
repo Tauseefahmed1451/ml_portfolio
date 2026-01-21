@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getProject, projects } from "../projects-data";
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 // Pre-generate all project pages at build time
@@ -14,8 +14,9 @@ export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const project = getProject(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProject(slug);
   if (!project) {
     return {
       title: "Project Not Found",
@@ -31,8 +32,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function ProjectDetail({ params }: PageProps) {
-  const project = getProject(params.slug);
+export default async function ProjectDetail({ params }: PageProps) {
+  const { slug } = await params;
+  const project = getProject(slug);
 
   if (!project) {
     notFound();
