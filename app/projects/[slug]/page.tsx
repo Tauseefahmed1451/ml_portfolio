@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getProject } from "../projects-data";
+import { getProject, projects } from "../projects-data";
 
 type PageProps = {
   params: { slug: string };
 };
 
-export const dynamic = "force-dynamic";
+// Pre-generate all project pages at build time
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return projects.map((p) => ({ slug: p.slug }));
+}
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const project = getProject(params.slug);
