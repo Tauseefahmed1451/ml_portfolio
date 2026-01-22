@@ -1,17 +1,18 @@
 export default function Resume() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-12 space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold">Resume</h1>
-        <p className="mt-2 text-slate-700">
-          View my resume below or download the PDF.
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-8 shadow-sm reveal">
+        <p className="eyebrow text-slate-600">Resume</p>
+        <h1 className="mt-4 text-3xl font-semibold text-slate-950">Download or view</h1>
+        <p className="mt-3 text-slate-700">
+          View my resume below or download the PDF for offline use.
         </p>
-        <div className="mt-4 flex flex-wrap gap-3 text-sm">
-          <a className="rounded-md border px-3 py-1" href="/resume.pdf" download>
+        <div className="mt-5 flex flex-wrap gap-3 text-sm">
+          <a className="rounded-full bg-slate-900 px-5 py-2 text-white" href="/resume.pdf" download>
             Download resume
           </a>
           <a
-            className="rounded-md border px-3 py-1"
+            className="rounded-full border border-slate-300 px-5 py-2"
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
@@ -19,9 +20,9 @@ export default function Resume() {
             Open in new tab
           </a>
         </div>
-      </div>
+      </section>
 
-      <div className="overflow-hidden rounded-lg border border-gray-200">
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
         <iframe
           title="Tauseef Ahmed Memon resume"
           src="/resume.pdf#view=FitH"

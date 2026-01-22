@@ -1,9 +1,14 @@
 import type { MetadataRoute } from "next";
+import { projects } from "./projects/projects-data";
 
 const baseUrl = "https://tauseefml.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
+  const projectEntries = projects.map((project) => ({
+    url: `${baseUrl}/projects/${project.slug}`,
+    lastModified,
+  }));
 
   return [
     { url: `${baseUrl}/`, lastModified },
@@ -11,12 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/case-studies/moderation-factcheck-at-scale`, lastModified },
     { url: `${baseUrl}/case-studies/custom-sd-game-characters`, lastModified },
     { url: `${baseUrl}/projects`, lastModified },
-    { url: `${baseUrl}/projects/rag-knowledge-assistant`, lastModified },
-    { url: `${baseUrl}/projects/document-completeness-checker`, lastModified },
-    { url: `${baseUrl}/projects/fact-check-moderation-pipeline`, lastModified },
-    { url: `${baseUrl}/projects/custom-sd-characters`, lastModified },
-    { url: `${baseUrl}/projects/liveness-detection-cnic`, lastModified },
+    ...projectEntries,
     { url: `${baseUrl}/public-work`, lastModified },
+    { url: `${baseUrl}/publications`, lastModified },
     { url: `${baseUrl}/resume`, lastModified },
   ];
 }

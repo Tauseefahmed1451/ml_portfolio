@@ -1,63 +1,64 @@
 export default function CaseStudy() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold">
+    <main className="mx-auto max-w-4xl px-6 py-12 space-y-8">
+      <header className="rounded-3xl border border-slate-200/70 bg-white/90 p-8 shadow-sm reveal">
+        <p className="eyebrow text-slate-600">Anonymized Case Study</p>
+        <h1 className="mt-4 text-3xl font-semibold text-slate-950">
           Custom Stable Diffusion for Game-style Characters (Anonymized)
         </h1>
-        <p className="mt-2 text-slate-700">
+        <p className="mt-3 text-slate-700">
           Role: Technical/Project Lead (team of 3). Built fine-tuning + production workflow.
         </p>
-        <p className="text-sm text-slate-600 mt-2">
+        <p className="mt-2 text-sm text-slate-600">
           Details anonymized due to NDA. No client identifiers, training data, or proprietary weights.
         </p>
       </header>
 
-      <section>
-        <h2 className="text-xl font-semibold">Goal</h2>
-        <p>
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Goal</h2>
+        <p className="mt-2 text-slate-700">
           Train and deploy a custom diffusion workflow to generate consistent game-style character
           outputs with controllable prompts and reliable inference behavior.
         </p>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Constraints</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Constraints</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Style consistency across a wide prompt range.</li>
           <li>Inference latency acceptable for production usage.</li>
           <li>Deployment must be stable under burst traffic.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Approach</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Approach</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Data curation and quality checks (NDA-redacted specifics).</li>
           <li>LoRA fine-tuning with controlled evaluation prompt sets.</li>
           <li>Production workflow for repeatable outputs and rollback safety.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Tradeoffs</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Tradeoffs</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Optimized for style fidelity over broad prompt diversity.</li>
           <li>Accepted longer training cycles to reduce inference-time complexity.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Impact</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Impact</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Delivered a production-ready generation workflow (details NDA-redacted).</li>
           <li>Consistent stylistic output for game character generation.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Sanitized architecture diagram</h2>
-        <figure className="mt-3 rounded-lg border border-gray-200 bg-gray-50 p-4">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Sanitized architecture diagram</h2>
+        <figure className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
           <svg viewBox="0 0 900 160" role="img" aria-label="Diffusion fine-tuning pipeline">
             <defs>
               <marker

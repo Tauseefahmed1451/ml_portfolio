@@ -1,39 +1,40 @@
 export default function CaseStudy() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold">
+    <main className="mx-auto max-w-4xl px-6 py-12 space-y-8">
+      <header className="rounded-3xl border border-slate-200/70 bg-white/90 p-8 shadow-sm reveal">
+        <p className="eyebrow text-slate-600">Anonymized Case Study</p>
+        <h1 className="mt-4 text-3xl font-semibold text-slate-950">
           Fact-check + Moderation Pipeline at Scale (Anonymized)
         </h1>
-        <p className="mt-2 text-slate-700">
+        <p className="mt-3 text-slate-700">
           Role: Technical/Project Lead (team of 6). Designed system to handle ~5k posts/sec.
         </p>
-        <p className="text-sm text-slate-600 mt-2">
+        <p className="mt-2 text-sm text-slate-600">
           Details anonymized due to NDA. No client identifiers, code, prompts, or proprietary data.
         </p>
       </header>
 
-      <section>
-        <h2 className="text-xl font-semibold">Goal</h2>
-        <p>
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Goal</h2>
+        <p className="mt-2 text-slate-700">
           Build a high-throughput pipeline that extracts claims, verifies them with retrieval, applies
           moderation, and emits a final decision/ranking signal within strict latency and reliability
           requirements.
         </p>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Constraints</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Constraints</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Throughput target: ~5k posts/sec (burst handling)</li>
           <li>Reliability: graceful degradation and safe fallbacks</li>
           <li>Observability: drift/quality monitoring + alerting</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Approach</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Approach</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Stream ingestion into a queue/worker pool for elastic scale.</li>
           <li>LLM claim extraction with caching for repeated templates.</li>
           <li>Retriever-backed evidence collection with a searchable index.</li>
@@ -42,26 +43,26 @@ export default function CaseStudy() {
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Tradeoffs</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Tradeoffs</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>Optimized for throughput and safety over perfect recall.</li>
           <li>Used tiered verification to contain latency while preserving quality.</li>
           <li>Preferred interpretable guardrails for high-risk categories.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Impact</h2>
-        <ul className="list-disc pl-6">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Impact</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-slate-700">
           <li>System designed to handle ~5k posts/sec throughput (anonymized benchmark)</li>
           <li>Improved safety and precision with retrieval-backed verification (NDA-safe)</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold">Sanitized architecture diagram</h2>
-        <figure className="mt-3 rounded-lg border border-gray-200 bg-gray-50 p-4">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm reveal">
+        <h2 className="text-2xl font-semibold text-slate-950">Sanitized architecture diagram</h2>
+        <figure className="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
           <svg viewBox="0 0 900 160" role="img" aria-label="High-level pipeline architecture">
             <defs>
               <marker

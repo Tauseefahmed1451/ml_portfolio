@@ -17,22 +17,33 @@ const studies = [
 
 export default function CaseStudies() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-12">
-      <h1 className="text-2xl font-bold">NDA Case Studies</h1>
-      <p className="mt-2 text-slate-700">
-        Client details are anonymized. These write-ups focus on architecture,
-        constraints, tradeoffs, and measurable outcomes -- without exposing
-        proprietary code/data.
-      </p>
+    <main className="mx-auto max-w-5xl px-6 py-12 space-y-10">
+      <section className="rounded-3xl border border-slate-200/70 bg-white/90 p-8 shadow-sm reveal">
+        <p className="eyebrow text-slate-600">NDA Case Studies</p>
+        <h1 className="mt-4 text-3xl font-semibold text-slate-950 sm:text-4xl">
+          Anonymized delivery write-ups
+        </h1>
+        <p className="mt-3 text-slate-700">
+          Client details are anonymized. These write-ups focus on architecture,
+          constraints, tradeoffs, and measurable outcomes without exposing
+          proprietary code or data.
+        </p>
+      </section>
 
-      <div className="mt-8 space-y-4">
+      <div className="space-y-4 stagger">
         {studies.map((s) => (
-          <div key={s.slug} className="rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-            <h2 className="text-lg font-semibold">
+          <div
+            key={s.slug}
+            className="rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm"
+          >
+            <h2 className="text-xl font-semibold text-slate-950">
               <Link href={`/case-studies/${s.slug}`}>{s.title}</Link>
             </h2>
             <p className="mt-2 text-sm text-slate-700">{s.subtitle}</p>
-            <Link className="mt-3 inline-block text-sm text-teal-700 underline" href={`/case-studies/${s.slug}`}>
+            <Link
+              className="mt-3 inline-block text-sm text-slate-700 underline"
+              href={`/case-studies/${s.slug}`}
+            >
               Read case study -&gt;
             </Link>
           </div>
