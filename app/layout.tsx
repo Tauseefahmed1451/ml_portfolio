@@ -5,6 +5,7 @@ import "./globals.css";
 const atkinson = Atkinson_Hyperlegible({
   variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 const sora = Sora({
