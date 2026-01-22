@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Fraunces, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { Atkinson_Hyperlegible, JetBrains_Mono, Sora } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space",
+const atkinson = Atkinson_Hyperlegible({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
+const sora = Sora({
   variable: "--font-display",
   subsets: ["latin"],
 });
@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} ${fraunces.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${atkinson.variable} ${sora.variable} ${jetbrainsMono.variable} antialiased`}
       >
         {children}
       </body>

@@ -13,24 +13,17 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-space);
+  --font-sans: var(--font-body);
   --font-mono: var(--font-jetbrains);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b1120;
-    --foreground: #e2e8f0;
-    --surface: #111827;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-space), "Space Grotesk", sans-serif;
+  font-family: var(--font-body), "Atkinson Hyperlegible", sans-serif;
   min-height: 100vh;
   position: relative;
+  color-scheme: light;
 }
 
 body::before {
@@ -66,7 +59,7 @@ body::after {
 h1,
 h2,
 h3 {
-  font-family: var(--font-display), var(--font-space), "Space Grotesk", serif;
+  font-family: var(--font-display), var(--font-body), "Atkinson Hyperlegible", sans-serif;
   letter-spacing: -0.02em;
 }
 
