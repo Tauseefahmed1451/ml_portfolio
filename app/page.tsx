@@ -36,9 +36,10 @@ export default function Home() {
               Shipping ML that survives production pressure.
             </h1>
             <p className="text-lg text-slate-700">
-              Senior Machine Learning Engineer (L4) specializing in GenAI, LLMOps,
-              and multimodal systems. I build reliable ML products with measurable
-              outcomes, fast iteration, and audit-ready workflows.
+              Senior Machine Learning Engineer (L4) with 5+ years of experience
+              specializing in GenAI, LLMOps, and multimodal systems. I build
+              reliable ML products with measurable outcomes, fast iteration, and
+              audit-ready workflows.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-slate-700">
               <span>Naval Anchorage, Islamabad, Pakistan</span>

@@ -2,6 +2,12 @@ import Link from "next/link";
 
 const studies = [
   {
+    slug: "correctional-monitoring-realtime-alerting",
+    title: "Real-time Correctional Facility Camera Monitoring (Anonymized)",
+    subtitle:
+      "Led team of 4; DeepStream + YOLOv8n-pose + LSTM + VLM for violence, medical distress, and tampering alerts.",
+  },
+  {
     slug: "moderation-factcheck-at-scale",
     title: "Fact-check + Moderation Pipeline at Scale (Anonymized)",
     subtitle:

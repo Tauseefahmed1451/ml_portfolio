@@ -21,6 +21,101 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "agentic-sales-intelligence-pipeline",
+    title: "Agentic Sales Intelligence Pipeline",
+    summary:
+      "LangGraph-orchestrated multi-agent system for website discovery, lead intelligence, competitor filtering, and personalized outbound email generation.",
+    type: "Production",
+    tags: [
+      "LangGraph",
+      "Agents",
+      "LLM",
+      "Apollo",
+      "Lead Enrichment",
+      "Workflow Orchestration",
+    ],
+    overview: [
+      "This system automates outbound sales research end-to-end from a target website URL to personalized outreach drafts.",
+      "Specialized agents perform discovery, intelligence synthesis, lead sourcing, lead filtering, and personalized email writing with shared state managed in LangGraph.",
+    ],
+    goals: [
+      "Reduce manual prospecting and research effort.",
+      "Improve lead quality by removing competitor and low-fit accounts.",
+      "Generate highly personalized outreach at scale without losing context.",
+    ],
+    whatIDid: [
+      "Designed and implemented a five-agent workflow with LangGraph-based orchestration.",
+      "Integrated Apollo and enrichment APIs to source and enrich lead lists.",
+      "Built filtering logic to suppress likely competitors before outreach generation.",
+    ],
+    howIDid: [
+      "Agent 1 and Agent 2 produce business, product, and ICP-aligned reports from the target website.",
+      "Agent 3 performs lead discovery using Apollo and similar providers; Agent 4 removes competitor and low-fit leads.",
+      "Agent 1 and Agent 2 are rerun for shortlisted leads, then Agent 5 drafts deeply personalized emails using the full evidence context.",
+    ],
+    architecture: [
+      "Target URL -> discovery agents -> company report + ICP profile.",
+      "Lead sourcing/enrichment -> competitor filtering -> lead shortlist.",
+      "Lead-level rediscovery -> personalization agent -> outreach drafts + audit traces.",
+    ],
+    tradeoffs: [
+      "Deep lead-level personalization improves response quality but increases total pipeline runtime.",
+      "Multi-provider lead enrichment improves coverage but adds API cost and retry complexity.",
+    ],
+    impact: [
+      "Turned a mostly manual outbound process into a repeatable agentic pipeline.",
+      "Improved lead quality by filtering competitor accounts before personalization.",
+    ],
+  },
+  {
+    slug: "correctional-facility-camera-monitoring",
+    title: "Correctional Facility Camera Monitoring System",
+    summary:
+      "Real-time correctional monitoring for violence, medical distress, and camera tampering alerts using DeepStream on NVIDIA Jetson Thor.",
+    type: "Anonymized",
+    tags: [
+      "DeepStream",
+      "YOLOv8 Pose",
+      "LSTM",
+      "VLM",
+      "Edge AI",
+      "NVIDIA Jetson",
+    ],
+    overview: [
+      "Built a real-time camera analytics pipeline for correctional facilities to detect high-risk events and alert authorities immediately.",
+      "The system combines pose-based activity cues, temporal modeling, and vision-language validation to improve alert quality under real-world noise.",
+    ],
+    goals: [
+      "Detect violence and medical distress indicators in near real time.",
+      "Detect camera tampering events and surface operational alerts.",
+      "Deploy a stable, low-latency solution on NVIDIA Jetson Thor edge devices.",
+    ],
+    whatIDid: [
+      "Led a team of 4 engineers as technical/project lead across model, pipeline, and deployment tracks.",
+      "Designed the DeepStream-based inference pipeline combining YOLOv8n-pose, LSTM temporal modeling, and VLM-assisted validation.",
+      "Defined alerting thresholds and escalation behavior for safety-critical workflows.",
+    ],
+    howIDid: [
+      "Processed camera streams with DeepStream and extracted pose-level features via YOLOv8n-pose.",
+      "Used LSTM sequence modeling for temporal incident detection and VLM checks for context-sensitive validation.",
+      "Optimized and deployed the full stack on NVIDIA Jetson Thor with runtime monitoring and fail-safe alerts.",
+    ],
+    architecture: [
+      "Camera streams -> DeepStream ingest -> YOLOv8n-pose features.",
+      "Temporal modeling (LSTM) + VLM validation -> incident scoring.",
+      "Alert engine -> authority notification + monitoring dashboards.",
+    ],
+    tradeoffs: [
+      "Lower alert latency can increase false positives, requiring calibrated thresholds and post-validation.",
+      "Edge constraints on Jetson Thor required careful balancing of model complexity and throughput.",
+    ],
+    impact: [
+      "Enabled real-time safety alerts for violence, medical distress, and camera tampering scenarios.",
+      "Delivered an edge-deployed, production-ready monitoring workflow for correctional operations.",
+    ],
+    relatedCaseStudy: "/case-studies/correctional-monitoring-realtime-alerting",
+  },
+  {
     slug: "nmx-video-recommendation",
     title: "NMX Video Recommendation Engine",
     summary:

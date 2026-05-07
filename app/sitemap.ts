@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${baseUrl}/`, lastModified },
     { url: `${baseUrl}/case-studies`, lastModified },
+    { url: `${baseUrl}/case-studies/correctional-monitoring-realtime-alerting`, lastModified },
     { url: `${baseUrl}/case-studies/moderation-factcheck-at-scale`, lastModified },
     { url: `${baseUrl}/case-studies/custom-sd-game-characters`, lastModified },
     { url: `${baseUrl}/projects`, lastModified },

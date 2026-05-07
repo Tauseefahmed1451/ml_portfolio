@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Tauseef Ahmed Memon",
   },
   description:
-    "Senior Machine Learning Engineer (L4) specializing in GenAI, LLMOps, and multimodal AI. Building production ML systems, fine-tuning LLMs and diffusion models, and leading delivery teams.",
+    "Senior Machine Learning Engineer (L4) with 5+ years in GenAI, LLMOps, and multimodal AI. Building production ML systems, fine-tuning LLMs and diffusion models, and leading delivery teams.",
   openGraph: {
     title: "Tauseef Ahmed Memon | Senior Machine Learning Engineer",
     description:
