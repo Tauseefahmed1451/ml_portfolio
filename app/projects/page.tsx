@@ -75,7 +75,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="space-y-6 reveal">
+      <section id="demo-videos" className="space-y-6 reveal">
         <div>
           <p className="eyebrow text-slate-600">Demo Videos</p>
           <h2 className="mt-3 text-3xl font-semibold text-slate-950">

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import profilePic from "../profilepic.JPG";
 import { projects } from "./projects/projects-data";
 
 const featuredProjects = projects.slice(0, 3);
@@ -73,11 +74,17 @@ export default function Home() {
               >
                 NDA case studies
               </Link>
+             <Link
+               className="rounded-full border border-slate-300 px-5 py-2"
+               href="/publications"
+             >
+               Publications
+             </Link>
               <Link
                 className="rounded-full border border-slate-300 px-5 py-2"
-                href="/publications"
+                href="/projects#demo-videos"
               >
-                Publications
+                Demo
               </Link>
               <Link className="rounded-full border border-slate-300 px-5 py-2" href="/resume">
                 Resume
@@ -106,7 +113,7 @@ export default function Home() {
               <div className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-orange-200/60 blur-2xl" />
               <div className="absolute -bottom-6 -right-6 h-20 w-20 rounded-full bg-sky-200/60 blur-2xl" />
               <Image
-                src="/headshot.png"
+                src={profilePic}
                 alt="Portrait of Tauseef Ahmed Memon"
                 width={420}
                 height={520}
